@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Data Mahasiswa</title>
+</head>
+
+<body>
+
+    <h2>LATIHAN 1 - DATA MAHASISWA</h2>
+
+    <form>
+        <table border="0">
+            <tr>
+                <td>Nim</td>
+            <td> <input type="text" name="Nim" placeholder="Nim" required maxlength ="10"><br></td>
+
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td> <input type="text" name="Nama" placeholder="Nama" required><br></td>
+            </tr>
+            <tr>
+                <td>Tgl lahir (dd-mm-yyyy):</td>
+                <td><input type="date" name="bday"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin :</td>
+                <td>
+                    <input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat Dibandung :</td>
+                <td><textarea name="message" rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tinggal di :</td>
+                <td>
+                    <input type="text" list="Rumah" id="pilih" />
+                    <datalist id="Rumah">
+                        <option value="Kos/Kontrakan">
+                        <option value="Rumah Saudara">
+                        <option value="Rumah Orang Tua">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih 2 Hobi yang paling disukai :</td>
+                <td>
+                    <form action="">
+                        <input type="checkbox" id="hobi1" name="hobi1" value="science">
+                        <label for="hobi1"> science</label><br>
+                        <input type="checkbox" id="hobi2" name="hobi2" value="teknologi">
+                        <label for="hobi2"> technology</label><br>
+                        <input type="checkbox" id="hobi3" name="hobi3" value="art">
+                        <label for="hobi3"> art</label><br>
+                        <input type="checkbox" id="hobi4" name="hobi4" value="sport">
+                        <label for="hobi4"> sport</label><br>
+                      </form><br /></td>
+        
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
+
